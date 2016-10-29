@@ -1,0 +1,41 @@
+<html ng-app="fitbit">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		button{
+			font-size: 1.5em;
+			width:30%;
+			height: 10%;
+			background-color: tomato;
+			font-weight: bold;
+			border-color: black;
+			color: white;
+		}
+		body{
+			padding-top: 10%;
+		}
+		p{
+			font-size: 4em;
+		}
+
+
+	</style>
+</head>
+<body ng-controller="fitbit-ctrl">
+<div class="container text-center">
+	<p>Welcome to the FitBit Application</p><br><br>
+	<button ng-click="auth()">Authorize</button>
+</div>
+<script>
+	angular.module('fitbit',[])
+			.controller('fitbit-ctrl',function($http,$scope, $window){
+				$scope.auth = function () {
+					$window.location.href = '/auth/fitbit';
+				}
+			})
+</script>
+</body>
+</html>
