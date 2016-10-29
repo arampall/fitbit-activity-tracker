@@ -28,6 +28,10 @@ app.get('/auth/fitbit', function(req, res, next) {
     res.redirect(authorization_uri);
 });
 
+app.get('/', function(req, res){
+    res.render('authenticate.ejs');
+})
+
 app.get('/fitbit/callback/', function(req, res, next) {
 
     var code = req.query.code;
@@ -48,8 +52,7 @@ app.get('/fitbit/callback/', function(req, res, next) {
 });
 
 app.get('/home',function(req, res){
-    console.log("in home");
-    res.send('<p>Home</p>');
+    res.render('data.ejs');
     var options = {
         host:'api.fitbit.com',
         path:'/1/user/-/profile.json',
@@ -62,6 +65,7 @@ app.get('/home',function(req, res){
         res.setEncoding('utf8');
         res.on('data', function (chunk) {
             console.log('BODY: ' + chunk);
+	    
         });
         console.log(res.statusCode);
     })
