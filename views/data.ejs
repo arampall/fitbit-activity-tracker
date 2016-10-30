@@ -18,7 +18,7 @@
     </style>
 </head>
 
-<body ng-controller="viewdata-ctrl">
+<body ng-controller="viewdata-ctrl" ng-init="profile()">
 <div class="container-fluid">
     <div class="row">
                                             <!-- Header -->
@@ -42,15 +42,15 @@
                      <div class="col-md-3 profile">
                          <img src="views/images/pro_options.png" class="img-circle" width="20" height="20">
                          </br>
-                         <a href="#" ng-click="show=1"><span>Profile</span></a>
+                         <a href="#" ng-click="profile()"><span>Profile</span></a>
                      </div>
                      <div class="col-md-3 heartRate">
                          <img src="views/images/heart.png" class="img-circle" width="20" height="20">
-                         </br><a href="#" ng-click="show=2"><span>Heart Rate</span></a>
+                         </br><a href="#" ng-click="heart()"><span>Heart Rate</span></a>
                      </div>
                      <div class="col-md-3 steps">
                          <img src="views/images/steps.png" class="img-circle" width="20" height="20">
-                         </br><a href="#" ng-click="show=3"><span>Steps</span></a>
+                         </br><a href="#" ng-click="steps()"><span>Steps</span></a>
                      </div>
                 </div>
             </div>
@@ -94,13 +94,21 @@
         <!-- Heart Rate -->
         <div class="col-md-9 userDetails" ng-show="show==2">
             <div class="row">
+             
+  <canvas id="line" class="chart chart-line" chart-data="data"
+chart-labels="labels" chart-series="series" chart-options="options"
+chart-dataset-override="datasetOverride" chart-click="onClick">
+</canvas>
 
             </div>
         </div>
         <!-- Steps -->
         <div class="col-md-9 userDetails" ng-show="show==3">
             <div class="row">
-
+		<canvas id="line" class="chart chart-line" chart-data="data"
+chart-labels="labels" chart-series="series" chart-options="options"
+chart-dataset-override="datasetOverride" chart-click="onClick">
+</canvas>
             </div>
          </div>
     </div>
@@ -119,28 +127,37 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
 <script>
     angular.module('viewdata',['chart.js']).
 	controller('viewdata-ctrl', function($scope,$http){
-	     $scope.show=1;
-	     $http({
-		method:'GET',
-		url:'/getUserData',
-	     }).then(function successCallback(response){
-		    console.log(response.data);
-		    $scope.profile = response.data.user;
-		}, function errorCallback(response){
-		    console.log(response);
-		});
+            $scope.profile=function()
+            {   
+               $scope.show=1;
+             $http({
+                method:'GET',
+                url:'/getUserData',
+             }).then(function successCallback(response){
+                     $scope.show=1;
+
+                    console.log(response.data);
+                    $scope.profile = response.data.user;
+                }, function errorCallback(response){
+                    console.log(response);
+                });
+     
+
+             };
 
 	     $scope.steps = function(){
 		$http({
 		    method:'GET',
 		    url:'/getStepData'
 		}).then(function successCallback(response){
-			console.log(response);
+		         $scope.show=3;
+                  	console.log(response);
 			var labels = [], data=[];
 			console.log(response.data["activities-steps"]);
     			response.data["activities-steps"].forEach(function(packet) {
       			labels.push(new Date(packet.dateTime).getDay());
       			data.push(packet.value);
+			});
 			$scope.labels = labels;
  		        $scope.data = data;
   			$scope.onClick = function (points, evt) {
@@ -159,8 +176,6 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
       				]
     			    }
  			 };
-
-    		});
 		   }, function errorCallback(response){
 
 		 })
@@ -171,13 +186,63 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                     method:'GET',
                     url:'/getHeartData'
                 }).then(function successCallback(response){
+                       $scope.show=2;
                         console.log(response);
+                       
                         var labels = [], data=[];
-                        console.log(response.data["activities-steps"]);
-                        response.data["activities-steps"].forEach(function(packet) {
+                        console.log(response.data["activities-heart"]);
+                         response.data["activities-heart"].forEach(function(packet) {
                         labels.push(new Date(packet.dateTime).getDay());
+			packet.value.heartRateZones.forEach(function(packetData)
+                       {
+                          if(packetData.name=="Out of Range")
+                             {
+                                   if(packetData.caloriesOut!=undefined)
+                                   {
+                                        outofrange.push(packetData.caloriesOut);
+                                    }else{
+                                   outofrange.push(0);
+
+                               }
+                             }
+                          else if(packetData.name=="Fat Burn")
+                             {
+                                   if(packetData.caloriesOut!=undefined)
+                                   {
+                                        fatburn.push(packetData.caloriesOut);
+                                    }else{
+                                   fatburn.push(0);
+                               }
+                             }
+                          else if(packetData.name=="Cardio")
+                             {
+                                   if(packetData.caloriesOut!=undefined)
+                                   {
+                                        cardio.push(packetData.caloriesOut);
+                                    }else{
+                                   cardio.push(0);
+                               }
+                             }
+                            else if(packetData.name=="Peak")
+                             {
+                                   if(packetData.caloriesOut!=undefined)
+                                     peak.push(packetData.caloriesOut);
+                                    }else{
+                                   peak.push(0);
+                               }
+                             }
+
+			  });
+                       });
+                         //data=[fatburn,outofrange,cardio,peak];
+                        console.log("DATA>>>>"+ data);
+                        //console.log("fatburn:"+ fatburn);
+                         //console.log("cardio::"+ cardio);
+
                         data.push(packet.value);
+                       // });                
                         $scope.labels = labels;
+                        $scope.series=["Fat Burn","Out of Range","Cardio","Peak"];
                         $scope.data = data;
                         $scope.onClick = function (points, evt) {
                                 console.log(points, evt);
@@ -196,7 +261,7 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                             }
                          };
 
-                });
+               // });
                    }, function errorCallback(response){
 
                  })
