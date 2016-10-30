@@ -9,11 +9,8 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
     <script src="node_modules/chart.js/dist/Chart.min.js"></script>
 <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+    <link rel="stylesheet" href="views/css/data.css">
     <style>
-        body{
-	    padding-top:10%;
-	}
-
 	#chart-size{
 	    width:600px;
 	    height:600px;
@@ -69,23 +66,23 @@
                                 <tbody>
                                 <tr class="active">
                                     <td>DOB</td>
-                                    <td>June 24,1987</td>
+                                    <td>{{profile.dateOfBirth}}</td>
                                 </tr>
                                 <tr class="success">
                                     <td>Age</td>
-                                    <td>29</td>
+                                    <td>{{profile.age}}</td>
                                 </tr>
                                 <tr class="info">
                                     <td>Gender</td>
-                                    <td>Male</td>
+                                    <td>{{profile.gender}}</td>
                                 </tr>
                                 <tr class="warning">
                                     <td>Height</td>
-                                    <td>5'7</td>
+                                    <td>{{profile.height}}</td>
                                 </tr>
                                 <tr class="danger">
                                     <td>Weight</td>
-                                    <td>148 lbs</td>
+                                    <td>{{profile.weight}}</td>
                                 </tr>
                                 </tbody>
 
@@ -122,6 +119,7 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
 <script>
     angular.module('viewdata',['chart.js']).
 	controller('viewdata-ctrl', function($scope,$http){
+	     $scope.show=1;
 	     $http({
 		method:'GET',
 		url:'/getUserData',
