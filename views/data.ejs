@@ -29,13 +29,13 @@
                 <div class="title">
                     <p>Fitbit</p>
                 </div>
-                <a><img src="img/logout.png" class="img-circle" width="20"height="20"><span style="font-size: 16px;color: white;">Logout</span></a>
+                <a><img src="views/images/logout.png" class="img-circle" width="20"height="20"><span style="font-size: 16px;color: white;">Logout</span></a>
              </div>
                                             <!-- Profile Picture -->
             <div class="col-md-9 profilePic">
                 <div class="row">
                     <div class="pic">
-                        <img src="img/profile.png" class="img-circle dp" width="150" height="150">
+                        <img src="{{profile.avatar}}" class="img-circle dp" width="150" height="150">
                     </div>
                 </div>
             </div>
@@ -43,16 +43,16 @@
             <div class="col-md-9 options">
                  <div class="row">
                      <div class="col-md-3 profile">
-                         <img src="img/pro_options.png" class="img-circle" width="20" height="20">
+                         <img src="views/images/pro_options.png" class="img-circle" width="20" height="20">
                          </br>
                          <a href="#" ng-click="show=1"><span>Profile</span></a>
                      </div>
                      <div class="col-md-3 heartRate">
-                         <img src="img/heart.png" class="img-circle" width="20" height="20">
+                         <img src="views/images/heart.png" class="img-circle" width="20" height="20">
                          </br><a href="#" ng-click="show=2"><span>Heart Rate</span></a>
                      </div>
                      <div class="col-md-3 steps">
-                         <img src="img/steps.png" class="img-circle" width="20" height="20">
+                         <img src="views/images/steps.png" class="img-circle" width="20" height="20">
                          </br><a href="#" ng-click="show=3"><span>Steps</span></a>
                      </div>
                 </div>
@@ -61,8 +61,7 @@
                 <!-- Profile -->
                 <div class="col-md-9 userDetails" ng-show="show==1">
                     <div class="row">
-					
-                            <img src="img/profile.png" class="img img-responsive" width="250" height="250">
+                            <img src="views/images/profile.png" class="img img-responsive" width="250" height="250">
                         </div>
                         <div class="col-md-6 profDetails">
                             <h2>Lionel Messi</h2>
@@ -109,7 +108,7 @@
          </div>
     </div>
 </div>
-<div class="container">
+<!--div class="container">
     <img src="{{profile.avatar}}"/>
     <button ng-click="steps()">Steps Info</button>
     <button ng-click="heart()">Heart Rate Info</button>
@@ -119,11 +118,11 @@ chart-labels="labels" chart-series="series" chart-options="options"
 chart-dataset-override="datasetOverride" chart-click="onClick"
 </canvas> 
 </div>
-</div>
+</div-->
 <script>
     angular.module('viewdata',['chart.js']).
 	controller('viewdata-ctrl', function($scope,$http){
-	     /*$http({
+	     $http({
 		method:'GET',
 		url:'/getUserData',
 	     }).then(function successCallback(response){
@@ -131,7 +130,7 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
 		    $scope.profile = response.data.user;
 		}, function errorCallback(response){
 		    console.log(response);
-		});*/
+		});
 
 	     $scope.steps = function(){
 		$http({

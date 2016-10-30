@@ -1,0 +1,98 @@
+body{
+    background-color: #f2f2f2;
+}
+.header{
+    background-color: #232f3e;
+    height: 50px;
+    width:100%
+}
+.title{
+    float: left;
+}
+.title p{
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-family: Verdana;
+    float:left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.header a{
+    float:left;
+    margin-left:87%;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.profilePic{
+    margin-top: 0.3%;
+    background-image: url("../img/background2.png");
+    margin-left: 12%;
+    height:200px;
+    background-size:cover;
+}
+.pic{
+    margin-top: 2.5%;
+    margin-left: 45%;
+}
+.dp{
+    border: double white 2px;
+}
+.options{
+    margin-left: 12%;
+    background-color: white;
+    border: solid 1px #d3d3d3;
+    border-width: 0.2em;
+}
+.profile{
+    width:33%;
+    padding-left: 15%;
+    border-right: outset;
+    font-family: Verdana;
+
+}
+
+.heartRate{
+    width:33%;
+    padding-left: 15%;
+    border-right: outset;
+    font-family: Verdana;
+}
+.steps{
+    padding-left: 15%;
+    width:34%;
+    font-family: Verdana;
+}
+.options a{
+    text-decoration: none;
+}
+.profile:hover{
+    background-color: #3b5998;
+    color: white;
+}
+.heartRate:hover{
+    background-color: #3b5998;
+    color: white;
+}
+.steps:hover{
+    background-color: #3b5998;
+    color: white;
+}
+.userDetails{
+    margin-top: 0.5%;
+    margin-left:12%;
+    border: solid 1px #d3d3d3;
+    border-width: 0.2em;
+    margin-bottom: 10px;
+}
+.profImg{
+    margin-top: 7%;
+    float:left;
+
+}
+.profDetails{
+    margin-left: 3%;
+    float: left;
+}
+
+
