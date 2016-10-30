@@ -18,6 +18,7 @@ var server=app.listen(80,function(){
     console.log('Port is: '+ server.address().port)});
 app.set('views','./views');
 app.set('view engine', 'ejs');
+app.use('/node_modules',express.static(__dirname + '/node_modules'));
 app.use('/views',express.static(__dirname + '/views'));
 var client = new FitbitClient("227WZ4", "b229e3d51fb80d295ab6090e9e16ceaf");
 var redirect_uri = 'http://54.244.196.130/fitbit/callback/';
@@ -38,6 +39,7 @@ app.get('/fitbit/callback/', function(req, res, next) {
     client.getToken(code, redirect_uri)
         .then(function(token) {
             storage.setItemSync('auth_token',token['token']['access_token']);
+	    console.log(storage.getItemSync('auth_token'));
             res.redirect(302, '/home');
 
         })
@@ -50,7 +52,45 @@ app.get('/fitbit/callback/', function(req, res, next) {
 
 app.get('/home', function(req, res){
     res.render('data.ejs');
-})
+});
+
+app.get('/getStepData', function(req, res){
+    var options_steps = {
+        host:'api.fitbit.com',
+        path:'/1/user/-/activities/steps/date/today/1w.json',
+        headers:{
+            'Authorization':'Bearer '+storage.getItemSync('auth_token')
+        }
+    }
+
+    https.get(options_steps, function(response){
+        response.setEncoding('utf8');
+	console.log(response);
+        response.on('data', function (steps_info) {
+	   console.log(steps_info);
+           res.send(steps_info);	                	             
+        });
+    })
+});
+
+app.get('/getHeartData', function(req, res){
+    var options_heartrate = {
+        host:'api.fitbit.com',
+        path:'/1/user/-/activities/heart/date/today/1d.json',
+        headers:{
+            'Authorization':'Bearer '+storage.getItemSync('auth_token')
+        }
+    }
+
+    https.get(options_heartrate, function(response){
+        response.setEncoding('utf8');
+        console.log(response);
+        response.on('data', function (heart_info) {
+           console.log(heart_info);
+           res.send(heart_info);
+        });
+    })
+});
 
 app.get('/getUserData',function(req, res){
     var options_profile = {
@@ -61,26 +101,9 @@ app.get('/getUserData',function(req, res){
         }
     }
 
-    var options_steps = {
-        host:'api.fitbit.com',
-        path:'/1/user/-/activities/steps/date/today/3m.json',
-        headers:{
-            'Authorization':'Bearer '+storage.getItemSync('auth_token')
-        }
-    }
-
-    var options_heartrate = {
-        host:'api.fitbit.com',
-        path:'/1/user/-/activities/heart/date/today/1d.json',
-        headers:{
-            'Authorization':'Bearer '+storage.getItemSync('auth_token')
-        }
-    }
-
     https.get(options_profile, function(response){
         response.setEncoding('utf8');
         response.on('data', function (profile_info) {
-            //console.log('1');
 	    res.send(profile_info);
             
 	    
