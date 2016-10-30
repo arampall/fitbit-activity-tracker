@@ -14,6 +14,19 @@
 <body ng-controller="viewdata-ctrl">
 <div class="ct-chart ct-perfect-fourth"></div>
 <script>
+    angular.module('viewdata',[]).
+	controller('viewdata-ctrl', function($scope,$http){
+	     $http({
+		method:'GET',
+		url:'/getUserData',
+	     }).then(function successCallback(response){
+		    console.log(response.data);
+		    
+		}, function errorCallback(response){
+		    console.log(response);
+		})
+
+	})
     // Our labels and three data series
     var data = {
         labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5', 'Week6'],

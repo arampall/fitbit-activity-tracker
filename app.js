@@ -35,12 +35,9 @@ app.get('/', function(req, res){
 app.get('/fitbit/callback/', function(req, res, next) {
 
     var code = req.query.code;
-    console.log(code);
     client.getToken(code, redirect_uri)
         .then(function(token) {
-            console.log(token['token']['access_token']);
             storage.setItemSync('auth_token',token['token']['access_token']);
-            console.log(storage.getItemSync('auth_token'));
             res.redirect(302, '/home');
 
         })
@@ -51,8 +48,11 @@ app.get('/fitbit/callback/', function(req, res, next) {
 
 });
 
-app.get('/home',function(req, res){
+app.get('/home', function(req, res){
     res.render('data.ejs');
+})
+
+app.get('/getUserData',function(req, res){
     var options_profile = {
         host:'api.fitbit.com',
         path:'/1/user/-/profile.json',
@@ -77,27 +77,12 @@ app.get('/home',function(req, res){
         }
     }
 
-    https.get(options_profile, function(res){
-        res.setEncoding('utf8');
-        res.on('data', function (profile_info) {
-
-            https.get(options_steps, function(res){
-                res.setEncoding('utf8');
-                res.on('data', function (steps_data) {
-
-                    https.get(options_heartrate, function(res){
-                        res.setEncoding('utf8');
-                        res.on('data', function (heart_data) {
-                            total_data = {};
-                            total_data['profile'] = profile_info;
-                            total_data['steps'] = steps_data;
-                            total_data['heart'] = heart_data;
-                            console.log('BODY: ' + total_data);
-                        });
-                    })
-
-                });
-            })
+    https.get(options_profile, function(response){
+        response.setEncoding('utf8');
+        response.on('data', function (profile_info) {
+            //console.log('1');
+	    res.send(profile_info);
+            
 	    
         });
     })
