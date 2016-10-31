@@ -155,6 +155,7 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                 var labels = [], data=[];
                 console.log(response.data["activities-steps"]);
                 response.data["activities-steps"].forEach(function(packet) {
+                   console.log("labels:"+ labels);
                     labels.push(new Date(packet.dateTime).getDay());
                     data.push(packet.value);
                 });
@@ -193,15 +194,19 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                 var fatburn=[],outofrange=[],cardio=[],peak=[];
                 console.log(response.data["activities-heart"]);
                 response.data["activities-heart"].forEach(function(packet) {
+                     console.log(response.data["activities-heart"]);
                     labels.push(new Date(packet.dateTime).getDay());
-                    packet.value.heartRateZones.forEach(function(packetData)
+                    console.log("label:"+ labels);
+                 packet.value.heartRateZones.forEach(function(packetData)
                     {
+
+                       console.log("packetData:"+packetData.name);
                         if(packetData.name=="Out of Range")
                         {
                             if(packetData.caloriesOut!=undefined)
                             {
                                 outofrange.push(packetData.caloriesOut);
-                            }else{
+								}else{
                                 outofrange.push(0);
 
                             }
@@ -222,7 +227,7 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                                 cardio.push(packetData.caloriesOut);
                             }else{
                                 cardio.push(0);
-                            }
+								}
                         }
                         else if(packetData.name=="Peak")
                         {
@@ -230,14 +235,16 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                                 peak.push(packetData.caloriesOut);
                             }else{
                                 peak.push(0);
-                            }
+                       i     }
                         }
 
                     });
+         
                 });
 
+             data=[fatburn,outofrange,cardio,peak];
                 console.log("DATA>>>>"+ data);
-                data=[fatburn,outofrange,cardio,peak];
+               // data=[fatburn,outofrange,cardio,peak];
                 //data.push(packet.value);
                 $scope.labels = labels;
                 $scope.series=["Fat Burn","Out of Range","Cardio","Peak"];
