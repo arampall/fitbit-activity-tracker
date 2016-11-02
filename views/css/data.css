@@ -1,8 +1,8 @@
 body{
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 url('../images/background1.png');
 }
 .header{
-    background-color: #232f3e;
+    background-color: #bf6a42;
     height: 50px;
     width:100%
 }
@@ -26,7 +26,7 @@ body{
 }
 .profilePic{
     margin-top: 0.3%;
-    background-image: url("../img/background2.png");
+    background-image: url("../images/background2.png");
     margin-left: 12%;
     height:200px;
     background-size:cover;
@@ -91,8 +91,8 @@ body{
 
 }
 .profDetails{
-    margin-left: 3%;
-    float: left;
+    margin-left: 25%;
+    /*float: left;*/
 }
 
 

@@ -11,14 +11,28 @@
     <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
     <link rel="stylesheet" href="views/css/data.css">
     <style>
-        #chart-size{
+        .dimension{
             width:600px;
-            height:600px;
+            height:400px;
+	    border-radius:3px; 
+	    border: 1px grey solid;
+	    margin:50px;
         }
+
+        .header-chart{
+	    height:40px;
+	    background-color:#bf6a42;
+	    border-bottom:0.5px grey solid;
+	    margin-bottom:10px;
+	}
+
+	.chart-format{
+	    padding:30px 30px 10px 10px;
+	}
     </style>
 </head>
 
-<body ng-controller="viewdata-ctrl" ng-init="profile()">
+<body ng-controller="viewdata-ctrl" ng-init="getprofile()">
 <div class="container-fluid">
     <div class="row">
         <!-- Header -->
@@ -26,7 +40,7 @@
             <div class="title">
                 <p>Fitbit</p>
             </div>
-            <a><img src="views/images/logout.png" class="img-circle" width="20"height="20"><span style="font-size: 16px;color: white;">Logout</span></a>
+            <a href="/logout"><img src="views/images/logout.png" class="img-circle" width="20"height="20"><span style="font-size: 16px;color: white;">Logout</span></a>
         </div>
         <!-- Profile Picture -->
         <div class="col-md-9 profilePic">
@@ -42,7 +56,7 @@
                 <div class="col-md-3 profile">
                     <img src="views/images/pro_options.png" class="img-circle" width="20" height="20">
                     </br>
-                    <a href="#" ng-click="profile()"><span>Profile</span></a>
+                    <a href="#" ng-click="getprofile()"><span>Profile</span></a>
                 </div>
                 <div class="col-md-3 heartRate">
                     <img src="views/images/heart.png" class="img-circle" width="20" height="20">
@@ -57,12 +71,12 @@
         <!-- Details -->
         <!-- Profile -->
         <div class="col-md-9 userDetails" ng-show="show==1">
-            <div class="row">
-                <img src="views/images/profile.png" class="img img-responsive" width="250" height="250">
-            </div>
-            <div class="col-md-6 profDetails">
-                <h2>Lionel Messi</h2>
-                <table class="table">
+            <!--div class="row">
+                <!--img src="views/images/profile.png" class="img img-responsive" width="250" height="250"-->
+            </div-->
+            <div class="col-md-6 col-md-offset-6 profDetails">
+                <h2>{{profile.fullName}}</h2>
+                <table class="table table-inverse">
                     <tbody>
                     <tr class="active">
                         <td>DOB</td>
@@ -93,41 +107,37 @@
     </div>
     <!-- Heart Rate -->
     <div class="col-md-9 userDetails" ng-show="show==2">
-        <div class="row">
-
+	<div class="row">
+        <div class="dimension">
+	    <div class="header-chart"></div>
+	    <div class="chart-format">
             <canvas id="line" class="chart chart-line" chart-data="data"
                     chart-labels="labels" chart-series="series" chart-options="options"
                     chart-dataset-override="datasetOverride" chart-click="onClick">
             </canvas>
-
+	    </div>
         </div>
+	</div>
     </div>
     <!-- Steps -->
     <div class="col-md-9 userDetails" ng-show="show==3">
-        <div class="row">
+        <div class="row dimension">
+	    <div class="header-chart"></div>
+	    <div>
             <canvas id="line" class="chart chart-line" chart-data="data"
                     chart-labels="labels" chart-series="series" chart-options="options"
                     chart-dataset-override="datasetOverride" chart-click="onClick">
             </canvas>
+	    </div>
         </div>
     </div>
 </div>
 </div>
-<!--div class="container">
-    <img src="{{profile.avatar}}"/>
-    <button ng-click="steps()">Steps Info</button>
-    <button ng-click="heart()">Heart Rate Info</button>
-<div id="chart-size">
-<canvas id="line" class="chart chart-line" chart-data="data"
-chart-labels="labels" chart-series="series" chart-options="options"
-chart-dataset-override="datasetOverride" chart-click="onClick"
-</canvas> 
-</div>
-</div-->
+
 <script>
     angular.module('viewdata',['chart.js']).
     controller('viewdata-ctrl', function($scope,$http){
-        $scope.profile=function()
+        $scope.getprofile=function()
         {
             $scope.show=1;
             $http({
@@ -136,10 +146,10 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
             }).then(function successCallback(response){
                 $scope.show=1;
 
-                console.log(response.data);
+                //console.log(response.data);
                 $scope.profile = response.data.user;
             }, function errorCallback(response){
-                console.log(response);
+                //console.log(response);
             });
 
 
@@ -151,11 +161,11 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                 url:'/getStepData'
             }).then(function successCallback(response){
                 $scope.show=3;
-                console.log(response);
+                //console.log(response);
                 var labels = [], data=[];
                 console.log(response.data["activities-steps"]);
                 response.data["activities-steps"].forEach(function(packet) {
-                   console.log("labels:"+ labels);
+                   //console.log("labels:"+ labels);
                     labels.push(new Date(packet.dateTime).getDay());
                     data.push(packet.value);
                 });
@@ -188,19 +198,19 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                 url:'/getHeartData'
             }).then(function successCallback(response){
                 $scope.show=2;
-                console.log(response);
+                //console.log(response);
 
                 var labels = [], data=[];
                 var fatburn=[],outofrange=[],cardio=[],peak=[];
                 console.log(response.data["activities-heart"]);
                 response.data["activities-heart"].forEach(function(packet) {
-                     console.log(response.data["activities-heart"]);
+                     //console.log(response.data["activities-heart"]);
                     labels.push(new Date(packet.dateTime).getDay());
-                    console.log("label:"+ labels);
+                    //console.log("label:"+ labels);
                  packet.value.heartRateZones.forEach(function(packetData)
                     {
 
-                       console.log("packetData:"+packetData.name);
+                       //console.log("packetData:"+packetData.name);
                         if(packetData.name=="Out of Range")
                         {
                             if(packetData.caloriesOut!=undefined)
@@ -235,7 +245,7 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                                 peak.push(packetData.caloriesOut);
                             }else{
                                 peak.push(0);
-                       i     }
+                            }
                         }
 
                     });
@@ -243,7 +253,7 @@ chart-dataset-override="datasetOverride" chart-click="onClick"
                 });
 
              data=[fatburn,outofrange,cardio,peak];
-                console.log("DATA>>>>"+ data);
+                //console.log("DATA>>>>"+ data);
                // data=[fatburn,outofrange,cardio,peak];
                 //data.push(packet.value);
                 $scope.labels = labels;

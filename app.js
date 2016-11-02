@@ -3,7 +3,7 @@ var express=require('express');
 var bodyParser=require('body-parser');
 var FitbitClient = require('fitbit-client-oauth2');
 var https = require('https');
-
+var request = require('request');
 var app=express();
 var storage = require('node-persist');
 storage.initSync();
@@ -76,20 +76,24 @@ app.get('/getStepData', function(req, res){
 app.get('/getHeartData', function(req, res){
     var options_heartrate = {
         host:'api.fitbit.com',
-        path:'/1/user/-/activities/heart/date/today/1d.json',
+        path:'/1/user/-/activities/heart/date/today/1w.json',
         headers:{
             'Authorization':'Bearer '+storage.getItemSync('auth_token')
         }
     }
 
-    https.get(options_heartrate, function(response){
-        response.setEncoding('utf8');
-        console.log(response);
-        response.on('data', function (heart_info) {
-           console.log(heart_info);
-           res.send(heart_info);
-        });
+    request({
+	url:'https://api.fitbit.com/1/user/-/activities/heart/date/today/1m.json', 
+	headers :{
+		'Authorization': 'Bearer '+storage.getItemSync('auth_token')
+	    }
+	},function (error, response, body) {
+		if (!error && response.statusCode == 200) {
+    	    	    console.log(body) // Show the HTML for the Google homepage.
+		    res.send(body);
+  	}
     })
+
 });
 
 app.get('/getUserData',function(req, res){
@@ -108,5 +112,28 @@ app.get('/getUserData',function(req, res){
             
 	    
         });
+    })
+});
+
+app.get('/logout', function(req, res){
+	console.log("in logout");
+	var base = "227WZ4:b229e3d51fb80d295ab6090e9e16ceaf";
+	request({
+        url:'https://api.fitbit.com/oauth2/revoke',
+	method:'POST',
+        headers :{
+                'Authorization': 'Basic '+'MjI3V1o0OmIyMjllM2Q1MWZiODBkMjk1YWI2MDkwZTllMTZjZWFm'
+            },
+	form: {
+            token: storage.getItemSync('auth_token')
+    	}
+        },function (error, response, body) {
+                if (!error && response.statusCode == 200) {
+                    console.log(body) // Show the HTML for the Google homepage.
+                    res.render(authenticate.ejs);
+		}
+		else{
+		    console.log(response);
+		}
     })
 });
