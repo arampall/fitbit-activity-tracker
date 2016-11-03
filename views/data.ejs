@@ -166,7 +166,7 @@
                 console.log(response.data["activities-steps"]);
                 response.data["activities-steps"].forEach(function(packet) {
                    //console.log("labels:"+ labels);
-                    labels.push(new Date(packet.dateTime).getDay());
+                    labels.push(new Date(packet.dateTime).getDate());
                     data.push(packet.value);
                 });
                 $scope.labels = labels;
@@ -205,7 +205,7 @@
                 console.log(response.data["activities-heart"]);
                 response.data["activities-heart"].forEach(function(packet) {
                      //console.log(response.data["activities-heart"]);
-                    labels.push(new Date(packet.dateTime).getDay());
+                    labels.push(new Date(packet.dateTime).getDate());
                     //console.log("label:"+ labels);
                  packet.value.heartRateZones.forEach(function(packetData)
                     {
