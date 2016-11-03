@@ -3,7 +3,361 @@
   <component name="ChangeListManager">
     <list default="true" id="3f7a3eb7-1c45-4e1c-b97b-6238f00b2906" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/data.ejs" afterPath="$PROJECT_DIR$/views/data.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.codeclimate.yml" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.codeclimate.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.dockerignore" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.dockerignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.editorconfig" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.jscsrc" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.jscsrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.jshintignore" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.jshintignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.node-version" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.node-version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.npmignore" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/Dockerfile" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/ISSUE_TEMPLATE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/LICENSE" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/PULL_REQUEST_TEMPLATE.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/PULL_REQUEST_TEMPLATE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/README.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/angular-chart.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/angular-chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/bower.json" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/dist/angular-chart.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/dist/angular-chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/dist/angular-chart.min.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/dist/angular-chart.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/amd.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/amd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/amd.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/amd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/app.css" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/app.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/bubble.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/bubble.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/bubble.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/bubble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/charts.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/charts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/charts.template.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/charts.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/commonjs.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/commonjs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/commonjs.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/commonjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/dataset-override.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/dataset-override.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/dataset-override.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/dataset-override.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/scatter.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/scatter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/scatter.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/scatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/smoothscroll.min.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/smoothscroll.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/stacked-bars.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/stacked-bars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/tables.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/tables.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/tabs.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/ticks.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/ticks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/webpack.commonjs.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/webpack.commonjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/webpack.config.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/xy.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/xy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/xy.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/examples/xy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/gulpfile.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/package.json" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/29-tabs.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/29-tabs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/29-tabs.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/29-tabs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/51-pie-update-colours.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/51-pie-update-colours.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/51-pie-update-colours.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/51-pie-update-colours.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/54-not-enough-colours.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/54-not-enough-colours.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/54-not-enough-colours.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/54-not-enough-colours.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/57-hex-colours.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/57-hex-colours.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/57-hex-colours.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/57-hex-colours.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/bubble.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/bubble.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/bubble.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/bubble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/charts.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/charts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/charts.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/charts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/configure-line-chart.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/configure-line-chart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/configure-line-chart.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/configure-line-chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/coverage.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/coverage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/custom-directive.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/custom-directive.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/custom-directive.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/custom-directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/dataset-override.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/dataset-override.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/dataset-override.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/dataset-override.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/horizontal-bar-chart.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/horizontal-bar-chart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/horizontal-bar-chart.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/horizontal-bar-chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/options-override.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/options-override.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/options-override.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/options-override.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/scatter.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/scatter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/scatter.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/scatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/index.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/mocha.opts" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/mocha.opts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/support/setup.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/support/setup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/test.integration.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/test.integration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/test.unit.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/test/test.unit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/Dockerfile-alpine" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/Dockerfile-alpine" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.bower.json" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.editorconfig" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.eslintignore" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.eslintignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.eslintrc" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.eslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.npmignore" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/LICENSE.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/MAINTAINING.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/MAINTAINING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/README.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/bower.json" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/composer.json" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/config.jshintrc" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/config.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/dist/Chart.bundle.min.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/dist/Chart.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/dist/Chart.min.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/dist/Chart.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/00-Getting-Started.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/00-Getting-Started.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/01-Chart-Configuration.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/01-Chart-Configuration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/02-Scales.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/02-Scales.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/03-Line-Chart.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/03-Line-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/04-Bar-Chart.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/04-Bar-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/05-Radar-Chart.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/05-Radar-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/06-Polar-Area-Chart.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/06-Polar-Area-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/07-Pie-Doughnut-Chart.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/07-Pie-Doughnut-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/08-Bubble-Chart.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/08-Bubble-Chart.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/09-Advanced.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/09-Advanced.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/10-Notes.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/docs/10-Notes.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/gulpfile.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/karma.conf.ci.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/karma.conf.ci.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/karma.conf.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/karma.coverage.conf.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/karma.coverage.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/package.json" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/AnimationCallbacks/progress-bar.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/AnimationCallbacks/progress-bar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar-horizontal.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar-horizontal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar-multi-axis.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar-multi-axis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar-stacked.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar-stacked.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bubble.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/bubble.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/combo-bar-line.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/combo-bar-line.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/data_label_combo-bar-line.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/data_label_combo-bar-line.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/different-point-sizes.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/different-point-sizes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/doughnut.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/doughnut.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-cubicInterpolationMode.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-cubicInterpolationMode.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-customTooltips.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-customTooltips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-legend.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-legend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-logarithmic.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-logarithmic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-multi-axis.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-multi-axis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-multiline-labels.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-multiline-labels.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-non-numeric-y.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-non-numeric-y.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-skip-points.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-skip-points.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-stacked-area.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-stacked-area.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-stepped.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-stepped.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-x-axis-filter.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line-x-axis-filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/line.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/pie-customTooltips.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/pie-customTooltips.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/pie.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/pie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/polar-area.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/polar-area.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/radar-skip-points.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/radar-skip-points.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/radar.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/radar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/scatter-logX.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/scatter-logX.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/scatter-multi-axis.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/scatter-multi-axis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/scatter.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/scatter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/timeScale/combo-time-scale.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/timeScale/combo-time-scale.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/timeScale/line-time-point-data.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/timeScale/line-time-point-data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/timeScale/line-time-scale.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/timeScale/line-time-scale.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/tooltip-hooks.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/samples/tooltip-hooks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/scripts/release.sh" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/scripts/release.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/chart.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Bar.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Bubble.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Bubble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Doughnut.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Doughnut.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Line.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.PolarArea.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.PolarArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Radar.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Radar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Scatter.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/charts/Chart.Scatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.bar.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.bubble.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.bubble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.doughnut.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.doughnut.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.line.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.polarArea.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.polarArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.radar.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/controllers/controller.radar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.animation.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.canvasHelpers.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.canvasHelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.controller.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.datasetController.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.datasetController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.element.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.element.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.helpers.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.layoutService.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.layoutService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.legend.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.legend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.plugin.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.scale.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.scale.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.scaleService.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.scaleService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.title.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.title.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.tooltip.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/core/core.tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.arc.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.arc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.line.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.point.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.point.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.rectangle.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/elements/element.rectangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.category.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.category.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.linear.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.linear.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.linearbase.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.linearbase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.logarithmic.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.logarithmic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.radialLinear.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.radialLinear.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.time.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/src/scales/scale.time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.bar.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.bar.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.bubble.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.bubble.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.doughnut.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.doughnut.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.line.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.line.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.polarArea.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.polarArea.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.radar.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/controller.radar.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.element.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.element.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.helpers.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.helpers.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.layoutService.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.layoutService.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.legend.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.legend.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.plugin.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.plugin.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.scaleService.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.scaleService.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.title.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.title.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.tooltip.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/core.tooltip.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/defaultConfig.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/defaultConfig.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.arc.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.arc.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.line.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.line.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.point.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.point.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.rectangle.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/element.rectangle.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/mockContext.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/mockContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.category.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.category.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.linear.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.linear.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.logarithmic.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.logarithmic.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.radialLinear.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.radialLinear.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.time.tests.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/test/scale.time.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/thankyou.md" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/bower_components/chart.js/thankyou.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/gradient.html" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/gradient.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/gradient.js" afterPath="$PROJECT_DIR$/node_modules/angular-chart.js/tmp/gradient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/LICENSE" afterPath="$PROJECT_DIR$/node_modules/body-parser/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/README.md" afterPath="$PROJECT_DIR$/node_modules/body-parser/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/index.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/read.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/read.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/raw.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/raw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/text.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/urlencoded.js" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/urlencoded.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chartjs/.editorconfig" afterPath="$PROJECT_DIR$/node_modules/chartjs/.editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chartjs/.eslintrc" afterPath="$PROJECT_DIR$/node_modules/chartjs/.eslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chartjs/LICENSE" afterPath="$PROJECT_DIR$/node_modules/chartjs/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chartjs/README.md" afterPath="$PROJECT_DIR$/node_modules/chartjs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chartjs/chart.js" afterPath="$PROJECT_DIR$/node_modules/chartjs/chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chartjs/index.html" afterPath="$PROJECT_DIR$/node_modules/chartjs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chartjs/package.json" afterPath="$PROJECT_DIR$/node_modules/chartjs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/Jakefile" afterPath="$PROJECT_DIR$/node_modules/ejs/Jakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/LICENSE" afterPath="$PROJECT_DIR$/node_modules/ejs/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/README.md" afterPath="$PROJECT_DIR$/node_modules/ejs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.js" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" afterPath="$PROJECT_DIR$/node_modules/ejs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/ejs.js" afterPath="$PROJECT_DIR$/node_modules/ejs/test/ejs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/backslash.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/backslash.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/backslash.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/backslash.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/comments.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/comments.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/comments.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/comments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/consecutive-tags.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/consecutive-tags.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/consecutive-tags.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/consecutive-tags.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/double-quote.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/double-quote.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/double-quote.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/double-quote.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/error.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/error.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/error.out" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/error.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/fail.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/fail.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/hello-world.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/hello-world.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include-abspath.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include-abspath.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include-simple.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include-simple.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include-simple.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include-simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.css.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.css.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.css.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.css.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_cache.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_cache.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_cache.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_cache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.css.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.css.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.css.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.css.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_cache.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_cache.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_cache.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_cache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp_child.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp_child.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/includes/bom.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/includes/bom.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/includes/menu-item.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/includes/menu-item.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/includes/menu/item.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/includes/menu/item.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/literal.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/literal.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/literal.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/literal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu_preprocessor.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu_preprocessor.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu_preprocessor.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu_preprocessor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu_var.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/menu_var.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/messed.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/messed.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/messed.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/messed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.mixed.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.mixed.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.mixed.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/newlines.mixed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.newlines.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.newlines.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.newlines.error.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.newlines.error.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.newlines.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.newlines.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.semicolons.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.semicolons.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.semicolons.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/no.semicolons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/para.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/para.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/pet.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/pet.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/rmWhitespace.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/rmWhitespace.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/single-quote.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/single-quote.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/single-quote.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/single-quote.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/space-and-tab-slurp.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/space-and-tab-slurp.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/space-and-tab-slurp.html" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/space-and-tab-slurp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/strict.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/strict.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/style.css" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/user-no-with.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/user-no-with.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/user.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/user.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/with-context.ejs" afterPath="$PROJECT_DIR$/node_modules/ejs/test/fixtures/with-context.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/ejs/test/mocha.opts" afterPath="$PROJECT_DIR$/node_modules/ejs/test/mocha.opts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/History.md" afterPath="$PROJECT_DIR$/node_modules/express/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/LICENSE" afterPath="$PROJECT_DIR$/node_modules/express/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/Readme.md" afterPath="$PROJECT_DIR$/node_modules/express/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/index.js" afterPath="$PROJECT_DIR$/node_modules/express/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/application.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/express.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/express.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/middleware/init.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/middleware/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/middleware/query.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/middleware/query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/request.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/request.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/response.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/response.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/router/index.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/router/layer.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/layer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/router/route.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/router/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/lib/view.js" afterPath="$PROJECT_DIR$/node_modules/express/lib/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/package.json" afterPath="$PROJECT_DIR$/node_modules/express/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/.npmignore" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/README.md" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/example/auth_server.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/example/auth_server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/package.json" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/api.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/auth.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/client.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/config.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/helpers.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/index.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/test/auth.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/test/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/test/instance.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/test/instance.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/test/token.js" afterPath="$PROJECT_DIR$/node_modules/fitbit-client-oauth2/test/token.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/http/package.json" afterPath="$PROJECT_DIR$/node_modules/http/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/https/package.json" afterPath="$PROJECT_DIR$/node_modules/https/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-persist/.npmignore" afterPath="$PROJECT_DIR$/node_modules/node-persist/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-persist/README.md" afterPath="$PROJECT_DIR$/node_modules/node-persist/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-persist/examples/counter/counter.js" afterPath="$PROJECT_DIR$/node_modules/node-persist/examples/counter/counter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-persist/package.json" afterPath="$PROJECT_DIR$/node_modules/node-persist/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-persist/src/local-storage.js" afterPath="$PROJECT_DIR$/node_modules/node-persist/src/local-storage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-persist/src/node-persist.js" afterPath="$PROJECT_DIR$/node_modules/node-persist/src/node-persist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/node-persist/tests/index.js" afterPath="$PROJECT_DIR$/node_modules/node-persist/tests/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/.eslintrc" afterPath="$PROJECT_DIR$/node_modules/request/.eslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/.npmignore" afterPath="$PROJECT_DIR$/node_modules/request/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/request/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/node_modules/request/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/LICENSE" afterPath="$PROJECT_DIR$/node_modules/request/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/README.md" afterPath="$PROJECT_DIR$/node_modules/request/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/codecov.yml" afterPath="$PROJECT_DIR$/node_modules/request/codecov.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/index.js" afterPath="$PROJECT_DIR$/node_modules/request/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/auth.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/cookies.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/cookies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/getProxyFromURI.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/getProxyFromURI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/har.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/har.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/helpers.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/multipart.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/multipart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/oauth.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/oauth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/querystring.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/querystring.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/redirect.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/redirect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/lib/tunnel.js" afterPath="$PROJECT_DIR$/node_modules/request/lib/tunnel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/package.json" afterPath="$PROJECT_DIR$/node_modules/request/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/request.js" afterPath="$PROJECT_DIR$/node_modules/request/request.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="fitbit-inclass.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +380,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1853">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="1570">
+              <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="connection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/data.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="267" column="7" selection-start-line="267" selection-start-column="7" selection-end-line="267" selection-end-column="7" />
+            <state relative-caret-position="884">
+              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/css/data.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,6 +428,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,16 +440,15 @@
       <list>
         <option value="$PROJECT_DIR$/views/viewProfile.html" />
         <option value="$PROJECT_DIR$/views/data.ejs.html" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/css/data.css" />
         <option value="$PROJECT_DIR$/views/data.ejs" />
+        <option value="$PROJECT_DIR$/connection.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -141,6 +517,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitbit-inclass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitbit-inclass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitbit-inclass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fitbit-inclass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".node-persist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -215,6 +627,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3f7a3eb7-1c45-4e1c-b97b-6238f00b2906" name="Default" comment="" />
@@ -226,33 +641,35 @@
       <workItem from="1477723720049" duration="801000" />
       <workItem from="1477843861492" duration="1318000" />
       <workItem from="1477871066354" duration="804000" />
+      <workItem from="1478057106243" duration="4651000" />
+      <workItem from="1478182171285" duration="3742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3334000" />
+    <option name="totallyTimeSpent" value="11727000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="21" width="1375" height="688" extended-state="1" />
+    <frame x="-7" y="21" width="1375" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -273,72 +690,111 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/data.ejs">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/connection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/data.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/data.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/viewProfile.ejs" />
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state relative-caret-position="884">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/css/data.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/data.ejs" />
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/data.ejs" />
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/data.ejs" />
+    <entry file="file://$PROJECT_DIR$/views/viewProfile.ejs" />
+    <entry file="file://$PROJECT_DIR$/views/css/data.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.node-persist/storage/bb33f285255ebb9089d20aaa82b56eb4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="269" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/data.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="267" column="7" selection-start-line="267" selection-start-column="7" selection-end-line="267" selection-end-column="7" />
+        <state relative-caret-position="884">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1570">
+          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
           <folding />
         </state>
       </provider>

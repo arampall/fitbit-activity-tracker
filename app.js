@@ -1,12 +1,14 @@
 
 var express=require('express');
 var bodyParser=require('body-parser');
+var connection=require('./connection');
 var FitbitClient = require('fitbit-client-oauth2');
 var https = require('https');
 var request = require('request');
 var app=express();
 var storage = require('node-persist');
 storage.initSync();
+connection.init();
 app.use(function(req,res,next){
     res.setHeader('Access-Control-Allow-Origin','*');
     next();
@@ -55,63 +57,120 @@ app.get('/home', function(req, res){
 });
 
 app.get('/getStepData', function(req, res){
-    var options_steps = {
-        host:'api.fitbit.com',
-        path:'/1/user/-/activities/steps/date/today/1w.json',
-        headers:{
-            'Authorization':'Bearer '+storage.getItemSync('auth_token')
+    request({
+        url:'https://api.fitbit.com/1/user/-/activities/steps/date/today/1w.json',
+        headers :{
+            'Authorization': 'Bearer '+storage.getItemSync('auth_token')
         }
-    }
+    },function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log(body) // Show the HTML for the Google homepage.
+            res.send(body);
+        }
 
-    https.get(options_steps, function(response){
-        response.setEncoding('utf8');
-	console.log(response);
-        response.on('data', function (steps_info) {
-	   console.log(steps_info);
-           res.send(steps_info);	                	             
-        });
+        else if(error && response.statusCode == 401){
+            var tokens = storage.getItemSync('auth_token');
+            client.refreshAccessToken(tokens)
+                .then(function(new_token) {
+                    storage.setItemSync('auth_token',token['token']['access_token']);
+                    request({
+                        url:'https://api.fitbit.com/1/user/-/activities/steps/date/today/1w.json',
+                        headers :{
+                            'Authorization': 'Bearer '+storage.getItemSync('auth_token')
+                        }
+                    },function (error, response, body) {
+                        if (!error && response.statusCode == 200) {
+                            console.log(body) // Show the HTML for the Google homepage.
+                            res.send(body);
+                        }
+
+                    })
+                    // save new_token data to db
+                    // then do more stuff here.
+
+                }).catch(function(err) {
+                console.log('error refreshing user token', err);
+            });
+        }
     })
 });
 
 app.get('/getHeartData', function(req, res){
-    var options_heartrate = {
-        host:'api.fitbit.com',
-        path:'/1/user/-/activities/heart/date/today/1w.json',
-        headers:{
-            'Authorization':'Bearer '+storage.getItemSync('auth_token')
-        }
-    }
-
     request({
-	url:'https://api.fitbit.com/1/user/-/activities/heart/date/today/1m.json', 
+	url:'https://api.fitbit.com/1/user/-/activities/heart/date/today/1m.json',
 	headers :{
 		'Authorization': 'Bearer '+storage.getItemSync('auth_token')
 	    }
 	},function (error, response, body) {
 		if (!error && response.statusCode == 200) {
-    	    	    console.log(body) // Show the HTML for the Google homepage.
+            console.log(body) // Show the HTML for the Google homepage.
 		    res.send(body);
-  	}
+  	    }
+
+  	    else if(error && response.statusCode == 401){
+  	        var tokens = storage.getItemSync('auth_token');
+            client.refreshAccessToken(tokens)
+                .then(function(new_token) {
+                    storage.setItemSync('auth_token',token['token']['access_token']);
+                    request({
+                        url:'https://api.fitbit.com/1/user/-/activities/heart/date/today/1m.json',
+                        headers :{
+                            'Authorization': 'Bearer '+storage.getItemSync('auth_token')
+                        }
+                    },function (error, response, body) {
+                        if (!error && response.statusCode == 200) {
+                            console.log(body) // Show the HTML for the Google homepage.
+                            res.send(body);
+                        }
+
+                    })
+                    // save new_token data to db
+                    // then do more stuff here.
+
+                }).catch(function(err) {
+                console.log('error refreshing user token', err);
+            });
+        }
     })
 
 });
 
 app.get('/getUserData',function(req, res){
-    var options_profile = {
-        host:'api.fitbit.com',
-        path:'/1/user/-/profile.json',
-        headers:{
-            'Authorization':'Bearer '+storage.getItemSync('auth_token')
+    request({
+        url:'https://api.fitbit.com/1/user/-/profile.json',
+        headers :{
+            'Authorization': 'Bearer '+storage.getItemSync('auth_token')
         }
-    }
+    },function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log(body) // Show the HTML for the Google homepage.
+            res.send(body);
+        }
 
-    https.get(options_profile, function(response){
-        response.setEncoding('utf8');
-        response.on('data', function (profile_info) {
-	    res.send(profile_info);
-            
-	    
-        });
+        else if(error && response.statusCode == 401){
+            var tokens = storage.getItemSync('auth_token');
+            client.refreshAccessToken(tokens)
+                .then(function(new_token) {
+                    storage.setItemSync('auth_token',token['token']['access_token']);
+                    request({
+                        url:'https://api.fitbit.com/1/user/-/profile.json',
+                        headers :{
+                            'Authorization': 'Bearer '+storage.getItemSync('auth_token')
+                        }
+                    },function (error, response, body) {
+                        if (!error && response.statusCode == 200) {
+                            console.log(body) // Show the HTML for the Google homepage.
+                            res.send(body);
+                        }
+
+                    })
+                    // save new_token data to db
+                    // then do more stuff here.
+
+                }).catch(function(err) {
+                console.log('error refreshing user token', err);
+            });
+        }
     })
 });
 
@@ -137,3 +196,4 @@ app.get('/logout', function(req, res){
 		}
     })
 });
+
