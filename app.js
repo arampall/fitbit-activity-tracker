@@ -4,7 +4,9 @@ var bodyParser=require('body-parser');
 var connection=require('./connection');
 var FitbitClient = require('fitbit-client-oauth2');
 var https = require('https');
+var randtoken = require('rand-token');
 var request = require('request');
+var session = require('express-session');
 var app=express();
 var storage = require('node-persist');
 storage.initSync();
@@ -13,6 +15,11 @@ app.use(function(req,res,next){
     res.setHeader('Access-Control-Allow-Origin','*');
     next();
 });
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -32,16 +39,25 @@ app.get('/auth/fitbit', function(req, res, next) {
 });
 
 app.get('/', function(req, res){
-    res.render('authenticate.ejs');
+    var sess = req.session;
+    if(!sess.userID){
+        res.render('authenticate.ejs');
+    }
+    else{
+        res.render('data.ejs');
+    }
+
 })
 
 app.get('/fitbit/callback/', function(req, res, next) {
-
+    var sess = req.session;
     var code = req.query.code;
     client.getToken(code, redirect_uri)
         .then(function(token) {
-            storage.setItemSync('auth_token',token['token']['access_token']);
-	    console.log(storage.getItemSync('auth_token'));
+            var userid = randtoken.generate(6);
+            sess.userID = userid;
+            storage.setItemSync(sess.userID,token['token']['access_token']);
+	    console.log(storage.getItemSync(sess.userID));
             res.redirect(302, '/home');
 
         })
@@ -53,6 +69,8 @@ app.get('/fitbit/callback/', function(req, res, next) {
 });
 
 app.get('/home', function(req, res){
+    var sess = req.session;
+    var token = randtoken.generate(6);
     res.render('data.ejs');
 });
 
